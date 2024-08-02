@@ -1,5 +1,5 @@
-1)TASK1 : TO-DO LIST APPLICATION :                                                                                                                              A to-do list cintains all the tasks that need to be done and can be ticked off accordindgly.It is suitable for every 
-                     person involved in a project.
+1)TASK1 : TO-DO LIST APPLICATION : A to-do list cintains all the tasks that need to be done and can be ticked off accordindgly.It is suitable for every 
+                                  person involved in a project.
 FEATURES:
    Add task:Add new tasks to the lists
    Mark complete: Mark task as complete
