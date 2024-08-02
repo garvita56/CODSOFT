@@ -6,3 +6,5 @@ FEATURES:
    Delete task: Remove selected tasks
    Clear all tasks: Clear all tasks with a confirmation prompt
    Persistent Storage: tasks are saved in task.txt
+
+![Uploading WhatsApp Image 2024-08-02 at 11.11.04 AM.jpeg…]()
