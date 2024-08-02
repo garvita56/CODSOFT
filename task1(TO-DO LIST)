@@ -1,0 +1,81 @@
+import tkinter as tk
+from tkinter import messagebox
+
+# List to store tasks
+tasks = []
+
+# Function to add a task
+def add_task():
+    task_name = entry_task.get()
+    priority = entry_priority.get()
+    if task_name and priority:
+        task = {'name': task_name, 'completed': False, 'priority': priority}
+        tasks.append(task)
+        update_task_list()
+        entry_task.delete(0, tk.END)
+        entry_priority.delete(0, tk.END)
+    else:
+        messagebox.showwarning("Warning", "Both task name and priority are required.")
+
+# Function to update the task list display
+def update_task_list():
+    listbox_tasks.delete(0, tk.END)
+    for i, task in enumerate(tasks, 1):
+        status = "Done" if task['completed'] else "Pending"
+        listbox_tasks.insert(tk.END, f"{i}. {task['name']} - {status} - Priority: {task['priority']}")
+
+# Function to mark a task as completed
+def complete_task():
+    try:
+        selected_task_index = listbox_tasks.curselection()[0]
+        tasks[selected_task_index]['completed'] = True
+        update_task_list()
+    except IndexError:
+        messagebox.showwarning("Warning", "No task selected.")
+
+# Function to delete a task
+def delete_task():
+    try:
+        selected_task_index = listbox_tasks.curselection()[0]
+        del tasks[selected_task_index]
+        update_task_list()
+    except IndexError:
+        messagebox.showwarning("Warning", "No task selected.")
+
+# Setting up the main window
+root = tk.Tk()
+root.title("To-Do List")
+
+# Task entry
+frame_entry = tk.Frame(root)
+frame_entry.pack(pady=10)
+
+label_task = tk.Label(frame_entry, text="Task:")
+label_task.pack(side=tk.LEFT)
+entry_task = tk.Entry(frame_entry)
+entry_task.pack(side=tk.LEFT, padx=5)
+
+label_priority = tk.Label(frame_entry, text="Priority:")
+label_priority.pack(side=tk.LEFT)
+entry_priority = tk.Entry(frame_entry)
+entry_priority.pack(side=tk.LEFT, padx=5)
+
+button_add_task = tk.Button(frame_entry, text="Add Task", command=add_task)
+button_add_task.pack(side=tk.LEFT, padx=5)
+
+# Task list display
+listbox_tasks = tk.Listbox(root, width=50, height=10)
+listbox_tasks.pack(pady=10)
+
+# Buttons to complete or delete tasks
+frame_buttons = tk.Frame(root)
+frame_buttons.pack(pady=10)
+
+button_complete_task = tk.Button(frame_buttons, text="Complete Task", command=complete_task)
+button_complete_task.pack(side=tk.LEFT, padx=5)
+
+button_delete_task = tk.Button(frame_buttons, text="Delete Task", command=delete_task)
+button_delete_task.pack(side=tk.LEFT, padx=5)
+
+# Run the application
+root.mainloop()
