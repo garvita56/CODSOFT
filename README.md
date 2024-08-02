@@ -17,3 +17,8 @@ FEATURES:
                     Subtraction: subtract the second number from the first.
                     Multiplication: multiplies two numbers
                     Division: Divide the firt number by the second with error handlingfor division by zero.
+           How to use: Run the program
+                       Select an opration by entering the corrresponding number
+                       Enter the two numbers when prompted
+                       View the result of the operations
+                       Repeat step 2-4 or exit by choosing option 5
