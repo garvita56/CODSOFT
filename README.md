@@ -8,3 +8,12 @@ FEATURES:
    Persistent Storage: tasks are saved in task.txt
 
 ![WhatsApp Image 2024-08-02 at 11 11 04 AM](https://github.com/user-attachments/assets/eaa603ed-0456-4fe5-ae39-f712a4d912f5)
+
+
+2)TASK2 : CALCULATOR : It performs basics arithmetic operations including addition,subtraction,multiplications,divisions.
+                       It selects an operations and enter two numbers.
+
+          FEATURES: Addition: Add two numbers
+                    Subtraction: subtract the second number from the first.
+                    Multiplication: multiplies two numbers
+                    Division: Divide the firt number by the second with error handlingfor division by zero.
