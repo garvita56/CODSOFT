@@ -22,3 +22,24 @@ FEATURES:
                        Enter the two numbers when prompted
                        View the result of the operations
                        Repeat step 2-4 or exit by choosing option 5
+
+3)TASK3 : PASSWORDS GENERATOR: This passwrod generator project implements a graphical user interface (GUI)for generating random 
+                               passwords based on user preferences.
+                               
+          KEY FEATURES : Customised password length:Set the desired length for generate password.
+                         Character set selection:Choose which character types to include in this password.
+                         Generate password button: generate a password based on selected option.
+                         Result display:Securely displays the generated passwords within the interface.
+
+           USAGE: Specify the desired password length.
+                         select the chracter sets to include in the password.
+                         click'generate password' to create a random password.
+                         use the displayed password for yor needs.
+                
+         ![task3](https://github.com/user-attachments/assets/06f8c964-eccb-44dd-8e5d-35f9ba0e2675
+
+                         
+
+
+
+                       
