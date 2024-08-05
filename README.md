@@ -36,7 +36,8 @@ FEATURES:
                          click'generate password' to create a random password.
                          use the displayed password for yor needs.
                 
-         ![task3](https://github.com/user-attachments/assets/06f8c964-eccb-44dd-8e5d-35f9ba0e2675
+         ![WhatsApp Image 2024-08-02 at 11 11 04 AM](https://github.com/user-attachments/assets/4f1bcf09-48e8-4ad6-97cd-3cd349cf738b)
+
 
                          
 
