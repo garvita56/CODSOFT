@@ -35,8 +35,8 @@ FEATURES:
                          select the chracter sets to include in the password.
                          click'generate password' to create a random password.
                          use the displayed password for yor needs.
-                
-         ![WhatsApp Image 2024-08-02 at 11 11 04 AM](https://github.com/user-attachments/assets/4f1bcf09-48e8-4ad6-97cd-3cd349cf738b)
+         ![WhatsApp Image 2024-08-04 at 1 04 00 PM (1)](https://github.com/user-attachments/assets/8fa9edb8-bfce-4852-9bb5-56f57f65e54d)
+       
 
 
                          
