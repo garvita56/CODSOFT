@@ -46,7 +46,8 @@ FEATURES:
                      Animated computer choice for an engaging experience.
                      Dynamic score tracking for user,computer,and outcomes.
                      Clean appealing design with custom style and layout.
-![image](https://github.com/user-attachments/assets/e87e5fcf-9d03-4aa7-9ecc-7282c2db459a)
+![image](https://github.com/user-attachments/assets/afddab4a-e478-46d5-94d2-799313208b1b)
+
 
                      
 
