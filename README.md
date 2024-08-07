@@ -31,7 +31,8 @@ FEATURES:
                          Generate password button: generate a password based on selected option.
                          Result display:Securely displays the generated passwords within the interface.
 
-           USAGE: Specify the desired password length.
+                  USAGE: Specify the desired password length.
+           
                          select the chracter sets to include in the password.
                          click'generate password' to create a random password.
                          use the displayed password for yor needs.
@@ -39,7 +40,17 @@ FEATURES:
 
 ![WhatsApp Image 2024-08-04 at 1 04 00 PM (1)](https://github.com/user-attachments/assets/8b1b2819-52fd-4c8b-bb0a-3ea9d0d27209)
 
+4)TASK-4 : ROCK-PAPER-SCISSOR: This python code use graphical user interface(GUI) for a rock-paper-scissor game using TKinter library.
 
+           FEATURES: Interative GUI with tkinter for user friendly gameplay.
+                     Animated computer choice for an engaging experience.
+                     Dynamic score tracking for user,computer,and outcomes.
+                     Clean appealing design with custom style and layout.
+                     ![task4](https://github.com/user-attachments/assets/a971d93c-1ec0-446b-b353-29a417624dc9)
+
+                     
+
+                     
 
                          
 
