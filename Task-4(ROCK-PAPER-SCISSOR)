@@ -1,0 +1,73 @@
+import tkinter as tk
+from tkinter import messagebox
+import random
+
+# Game logic function
+def play(choice):
+    choices = ['Rock', 'Paper', 'Scissors']
+    computer_choice = random.choice(choices)
+    
+    # Determine the result
+    if choice == computer_choice:
+        result = "It's a tie!"
+    elif (choice == 'Rock' and computer_choice == 'Scissors') or \
+         (choice == 'Paper' and computer_choice == 'Rock') or \
+         (choice == 'Scissors' and computer_choice == 'Paper'):
+        result = "You win!"
+        update_score('player')
+    else:
+        result = "You lose!"
+        update_score('computer')
+    
+    # Update result and computer choice labels
+    result_label.config(text=f"Computer chose: {computer_choice}\n{result}")
+
+# Function to update scores
+def update_score(winner):
+    global player_score, computer_score
+    if winner == 'player':
+        player_score += 1
+    elif winner == 'computer':
+        computer_score += 1
+    score_label.config(text=f"Player Score: {player_score} - Computer Score: {computer_score}")
+
+# Function to reset the game
+def play_again():
+    result_label.config(text="")
+    # Optionally reset scores or keep them
+    # player_score = 0
+    # computer_score = 0
+    # score_label.config(text=f"Player Score: {player_score} - Computer Score: {computer_score}")
+
+# Initialize scores
+player_score = 0
+computer_score = 0
+
+# Create the main window
+root = tk.Tk()
+root.title("Rock-Paper-Scissors Game")
+
+# Create and place the buttons
+rock_button = tk.Button(root, text="Rock", command=lambda: play('Rock'))
+rock_button.pack(pady=10)
+
+paper_button = tk.Button(root, text="Paper", command=lambda: play('Paper'))
+paper_button.pack(pady=10)
+
+scissors_button = tk.Button(root, text="Scissors", command=lambda: play('Scissors'))
+scissors_button.pack(pady=10)
+
+# Label to show the result
+result_label = tk.Label(root, text="")
+result_label.pack(pady=20)
+
+# Label to display scores
+score_label = tk.Label(root, text=f"Player Score: {player_score} - Computer Score: {computer_score}")
+score_label.pack(pady=10)
+
+# Button to play again
+play_again_button = tk.Button(root, text="Play Again", command=play_again)
+play_again_button.pack(pady=10)
+
+# Run the application
+root.mainloop()
