@@ -49,8 +49,17 @@ FEATURES:
 ![image](https://github.com/user-attachments/assets/afddab4a-e478-46d5-94d2-799313208b1b)
 
 
-                     
+5)Task-5 : CONTACT-BOOK APP: CONTACT BOOK application in python using Tkinter and SQLite is a desktop tool for managing contact.                          
 
+FEATURES:
+        - GUI Interface: Built with Tkinter for user interaction.
+        - SQLite Database: Stores contact details persistently.
+        - Function: Add,view,update,delete and search contact.
+        - Error handling: Alertsusersto database issue.
+        -Responsive Design: Oranganizes elements for usability 
+![task5](https://github.com/user-attachments/assets/482916ca-0caf-4ac3-ac86-e0d98be83a9e)
+
+        
                      
 
                          
